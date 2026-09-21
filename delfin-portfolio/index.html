@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delfin John Anasco | Portfolio</title>
+  <meta name="description" content="Portfolio of Delfin John Anasco.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="#portfolio-hero"><span class="brand-mark"></span>Delfin John Anasco</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav" class="nav">
+      <a href="#portfolio-hero">Home</a>
+      <a href="#portfolio-about">About</a>
+      <a href="#portfolio-skills">Skills</a>
+      <a href="#portfolio-project">Project</a>
+      <a href="#portfolio-contact">Contact</a>
+      <button class="theme-btn" id="themeBtn" type="button" aria-pressed="false">Light Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="portfolio-hero" class="hero">
+      <div class="hero-text">
+        <p class="hero-hello">Hello, I'm</p>
+        <h1>Delfin John <span>Anasco</span></h1>
+        <p class="hero-tag">Future successful person. I hope one day everyone achieves what they are chasing.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#portfolio-project">Go to Projects</a>
+          <a class="btn btn-ghost" href="#portfolio-contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="slash"></div>
+        <img src="asset/profile.png" alt="Delfin John Anasco" width="250" height="198">
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="portfolio-about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <p class="about-text">
+          I'm a beginner in coding who is passionate about learning and improving my skills.
+          I'm still early in my programming journey, but I'm eager to explore new technologies,
+          solve problems, and understand how things work.
+        </p>
+        <div class="about-info">
+          <p><strong>Location</strong><span class="todo">Marilao Bulacan</span></p>
+          <p><strong>Tertiary</strong><span class="todo">Pmabyang Dalubhsaan Ng Marilao</span></p>
+          <p><strong>Secondary</strong><span class="todo">Philippines lyceum of saint dominique</span></p>
+          <p><strong>Primary</strong><span class="todo">Lambakin Marilao Elementary School</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="portfolio-skills" class="section">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Node.js</li>
+        <li>Database</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="portfolio-project" class="section">
+      <h2 class="section-title">Recent Projects</h2>
+      <p class="section-sub">My school activities. Click a project to see it bigger.</p>
+
+      <div class="projects">
+        <button class="project" type="button" data-img="asset/project-1.png" data-title="Personal Website">
+          <img src="asset/project-1.png" alt="Screenshot of my personal website with a green background and a top menu" loading="lazy">
+          <span class="overlay"><strong>Personal Website</strong><em>View screenshot</em></span>
+        </button>
+        <button class="project" type="button" data-img="asset/project-2.png" data-title="Coco Milktea">
+          <img src="asset/project-2.png" alt="Screenshot of the Coco Milktea menu page" loading="lazy">
+          <span class="overlay"><strong>Coco Milktea</strong><em>View screenshot</em></span>
+        </button>
+        <button class="project" type="button" data-img="asset/project-3.png" data-title="Student Personal Website">
+          <img src="asset/project-3.png" alt="Screenshot of the student personal website with welcome and announcements panels" loading="lazy">
+          <span class="overlay"><strong>Student Personal Website</strong><em>View screenshot</em></span>
+        </button>
+        <button class="project" type="button" data-img="asset/project-4.png" data-title="Personal Website with Announcements">
+          <img src="asset/project-4.png" alt="Screenshot of my personal website with welcome and announcements boxes" loading="lazy">
+          <span class="overlay"><strong>Personal Website with Announcements</strong><em>View screenshot</em></span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- CONTACT -->
+  <footer id="portfolio-contact" class="footer">
+    <h2 class="section-title">Contact Me</h2>
+    <ul class="contacts">
+      <li>
+        <a href="mailto:delpinjohnanasco@gmail.com">
+          <span class="c-label">Gmail</span>
+          <span class="c-value">delpinjohnanasco@gmail.com</span>
+        </a>
+      </li>
+      <li>
+        <a href="tel:+639301630756">
+          <span class="c-label">Contact number</span>
+          <span class="c-value">09301630756</span>
+        </a>
+      </li>
+      <li>
+        <div class="c-static">
+          <span class="c-label">Roblox</span>
+          <span class="c-value">nopink_01</span>
+        </div>
+      </li>
+      <li>
+        <div class="c-static">
+          <span class="c-label">Wild Rift</span>
+          <span class="c-value">di lang pala ako#pen</span>
+        </div>
+      </li>
+    </ul>
+    <p class="copy">&copy; <span id="year">2026</span> Delfin John Anasco. All rights reserved.</p>
+  </footer>
+
+  <!-- Screenshot viewer -->
+  <dialog id="viewer" class="viewer" aria-label="Project screenshot">
+    <button class="viewer-close" id="viewerClose" type="button" aria-label="Close">&times;</button>
+    <p class="viewer-title" id="viewerTitle"></p>
+    <img id="viewerImg" src="" alt="">
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
